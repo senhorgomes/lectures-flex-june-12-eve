@@ -1,0 +1,23 @@
+{
+  "name": "TCPlecture",
+  "version": "1.0.0",
+  "description": "Computer networking refers to interconnected computing devices that can exchange data and share resources with each other. Essentially two or multiple devices communicating with one another.",
+  "main": "chatServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senhorgomes/lectures-west-23-07-05.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/senhorgomes/lectures-west-23-07-05/issues"
+  },
+  "homepage": "https://github.com/senhorgomes/lectures-west-23-07-05#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
