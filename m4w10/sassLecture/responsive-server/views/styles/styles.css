@@ -1,0 +1,56 @@
+section {
+    font-size: 20px;
+}
+.box {
+    border: 0.5em solid black;
+    height: 120px;
+    /* width: 50%; */
+    background-color: darkblue;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+/* .parent {
+    display: flex;
+    justify-content: space-around;
+} */
+/* section {
+    width: 50%;
+} */
+/* Desktop view */
+/* Anything above 1500 pixels */
+@media only screen and (min-width: 1500px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .box {
+        width: 35%;
+    }
+}
+
+/* Smartphone view */
+/* For anything below 900 pixels */
+@media only screen and (max-width: 900px) {
+    .box {
+        border: 0.5em solid blue;
+        /* width: 50%; */
+        color: rgb(0, 0, 0);
+        background-color: white;
+        font-size: calc(16px + 0.5em);
+    }
+}
+/* Tablet view */
+@media only screen and (min-width: 901px)and (max-width: 1499px) {
+    .box {
+        border: 0.5em solid blue;
+        /* width: 50%; */
+        color: rgb(0, 0, 0);
+        background-color: white;
+        font-size: calc(16px + 0.5em);
+    }
+}

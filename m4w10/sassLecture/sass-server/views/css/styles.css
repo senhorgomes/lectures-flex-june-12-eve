@@ -1,0 +1,58 @@
+section {
+  font-size: 20px;
+}
+
+.box, .box--5, .box--4, .box--3, .box--2, .box--1 {
+  border: 0.5em solid #c6538c;
+  height: 120px;
+  /* width: 50%; */
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.box--1 {
+  background-color: darkblue;
+}
+.box--2 {
+  background-color: rgb(139, 0, 32);
+}
+.box--3 {
+  background-color: rgb(0, 139, 39);
+}
+.box--4 {
+  background-color: rgb(235, 242, 30);
+}
+.box--5 {
+  background-color: rgb(255, 43, 237);
+}
+.box:hover, .box--1:hover, .box--2:hover, .box--3:hover, .box--4:hover, .box--5:hover {
+  background-color: #987239;
+}
+
+/* .parent {
+    display: flex;
+    justify-content: space-around;
+} */
+/* section {
+    width: 50%;
+} */
+/* Desktop view */
+/* Anything above 1500 pixels */
+@media only screen and (min-width: 1500px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  section .box, section .box--1, section .box--2, section .box--3, section .box--4, section .box--5 {
+    width: 35%;
+  }
+}
+/* Smartphone view */
+/* For anything below 900 pixels */
+
+
+/*# sourceMappingURL=styles.css.map */
