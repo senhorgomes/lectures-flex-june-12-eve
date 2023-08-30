@@ -1,0 +1,4 @@
+- node-postgres
+- using PSQL from javascript files
+- Connect postgres to express
+- Best practices, refactor

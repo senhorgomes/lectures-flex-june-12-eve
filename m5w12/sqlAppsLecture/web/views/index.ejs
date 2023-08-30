@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page for Pokemon</title>
+</head>
+
+<body>
+    <h1>Index page for Pokemon</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Pokemon name</th>
+                <th scope="col">Pokemon type</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let pokemon of pokemons) { %>
+                <tr>
+                    <td>
+                        <%= pokemon.name %>
+                    </td>
+                    <td>
+                        <%= pokemon.type %>
+                    </td>
+                    <td>
+                        <form method="GET" action="/pokemon/edit/<%= pokemon.id %>">
+                            <button type='submit' class='btn btn-primary'>Edit</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="POST" action="/pokemon/delete/<%= pokemon.id %>">
+                            <button type='submit' class='btn btn-danger'>Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
