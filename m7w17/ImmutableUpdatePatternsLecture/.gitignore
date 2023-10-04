@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+panago/node_modules
+panago/.pnp
+panago/.pnp.js
+
+# testing
+panago/coverage
+
+# production
+panago/build
+
+# misc
+panago/.DS_Store
+panago/.env.local
+panago/.env.development.local
+panago/.env.test.local
+panago/.env.production.local
+
+panago/npm-debug.log*
+panago/yarn-debug.log*
+panago/yarn-error.log*
