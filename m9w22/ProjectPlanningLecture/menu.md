@@ -1,0 +1,4 @@
+- Managing a Project
+- The Planning Process
+- Tools of the Trade
+- Discuss!
